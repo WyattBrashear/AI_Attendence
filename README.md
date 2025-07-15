@@ -1,2 +1,2 @@
 # AI_Attendence
-AI Attendence system
+My take on an AI Attendence system
