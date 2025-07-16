@@ -9,7 +9,7 @@ for i in range(stu_amount):
     cap = cv2.VideoCapture(0)
     tval = ["train", "val", "test"]
     student_class = str(input("What student are you adding in today? "))
-    frame_amount = int(input("Please enter (As an integer) how many frames to capture. (per class) ")) * 3
+    frame_amount = int(input("Please enter (As an integer) how many frames to capture. (multiplied by 3 for data) ")) * 3
     # Check if camera opened successfully
     if not cap.isOpened():
         print("Error: Could not open webcam.")
