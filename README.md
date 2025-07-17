@@ -1,7 +1,7 @@
 # AI_Attendence
 My take on an AI Attendence system
 
-# Camera Caupture
+# Camera Capture
 The Camera capture script is used to "scan" the persons face for better understanding of thier facial features.
 By "scan" i mean rapidly take TONS of photos of the person of all angles to create a understanding of what they look like.
 
