@@ -14,4 +14,4 @@ in testing, It's confidence is 99% on average. In training, it is 100% on averag
 3. Get training and customize it to yuor needs.
 
 ## Video
-https://youtu.be/u9WWA2nTIf8
+https://youtu.be/myGDVuliXRk
