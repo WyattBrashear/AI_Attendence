@@ -18,4 +18,4 @@ def mark(type, studentname, class_name):
         atten_json.append(atten_student)
         json.dump(atten_json, f, indent=5)
 #Example usage
-mark("P", "Jane Doe", "Math")
+#mark("P", "Jane Doe", "Math")
