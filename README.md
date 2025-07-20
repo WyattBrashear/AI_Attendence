@@ -11,7 +11,7 @@ in testing, It's confidence is 99% on average. In training, it is 100% on averag
 ## Running
 1. Clone into the repository
 2. Run the camera capture tool.
-3. Get training and customize it to yuor needs.
+3. Get training and customize it to your needs.
 
 ## Video
 https://youtu.be/myGDVuliXRk
