@@ -3,29 +3,30 @@ import os
 import random
 import time
 
-stu_amount = int(input("How many students are you adding in today? "))
+stu_amount = int(input("How many classes are you adding in today? "))
 for i in range(stu_amount):
     # Create a VideoCapture object (0 for default webcam)
     cap = cv2.VideoCapture(0)
     tval = ["train", "val", "test"]
-    student_class = str(input("What student are you adding in today? "))
+    dataset = input("Whats the dataset name?")
+    student_class = str(input("What class are you adding in today? "))
     frame_amount = int(input("Please enter (As an integer) how many frames to capture. (multiplied by 3 for data) ")) * 3
     # Check if camera opened successfully
     if not cap.isOpened():
         print("Error: Could not open webcam.")
         exit()
     if os.path.exists("classroom_dataset"):
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[0]}\{student_class}")
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[1]}\{student_class}")
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[2]}\{student_class}")
+        os.mkdir(f"{os.getcwd()}\{dataset}\{tval[0]}\{student_class}")
+        os.mkdir(f"{os.getcwd()}\{dataset}\{tval[1]}\{student_class}")
+        os.mkdir(f"{os.getcwd()}\{dataset}\{tval[2]}\{student_class}")
     else:
-        os.mkdir(f"{os.getcwd()}\classroom_dataset")
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[2]}")
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[1]}")
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[0]}")
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[0]}\{student_class}")
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[1]}\{student_class}")
-        os.mkdir(f"{os.getcwd()}\classroom_dataset\{tval[2]}\{student_class}")
+        os.mkdir(f"{os.getcwd()}\{dataset}")
+        os.mkdir(f"{os.getcwd()}\{}\{tval[2]}")
+        os.mkdir(f"{os.getcwd()}\{dataset}\{tval[1]}")
+        os.mkdir(f"{os.getcwd()}\{dataset}\{tval[0]}")
+        os.mkdir(f"{os.getcwd()}\{dataset}\{tval[0]}\{student_class}")
+        os.mkdir(f"{os.getcwd()}\{dataset}\{tval[1]}\{student_class}")
+        os.mkdir(f"{os.getcwd()}\{dataset}\{tval[2]}\{student_class}")
     print(f"Image capture is about to begin for: {student_class}. Please make sure to move your head around for best results.")
     time.sleep(1)
     print("Image capture is beggining in 3.")
